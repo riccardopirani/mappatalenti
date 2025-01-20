@@ -3,7 +3,7 @@
 Plugin Name: Ek Mappa dei talenti
 Description: plugin per la gestione della mappa dei talenti 
 Version:     1.0
-Author:      Alessandro Grassi
+Author:      Riccardo Pirani
 Text Domain: ek_mappa
 Domain Path: /languages
 */
