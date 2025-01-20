@@ -48,18 +48,15 @@ public function form_mappa_talenti($slug_mappa = '', $lingua = '') {
         $form .= '</div>';
         $form .= '<div class="col-md-4 mb-2">';
         $form .= '<label for="data_nascita_utente">Your date of birth*</label>';
-        //$form .= '<input class="form-control" type="date" name="data_di_nascita_utente" required>';
         $form .= '<input class="form-control" type="text" id="data_di_nascita_utente" name="data_di_nascita_utente" required placeholder="gg/mm/aaaa" pattern="\d{1,2}/\d{1,2}/\d{4}">';
 
         $form .= '</div>';
         $form .= '<div class="col-md-4 mb-2">';
         $form .= '<label for="data_di_nascita_madre">Your mother\'s date of birth</label>';
-        //$form .= '<input class="form-control" type="date" name="data_di_nascita_madre" required>';
         $form .= '<input class="form-control" type="text"  id="data_di_nascita_madre" name="data_di_nascita_madre" placeholder="gg/mm/aaaa" pattern="\d{1,2}/\d{1,2}/\d{4}">';
         $form .= '</div>';
         $form .= '<div class="col-md-4 mb-2">';
         $form .= '<label for="data_di_nascita_padre">Your father\'s date of birth</label>';
-        //$form .= '<input class="form-control" type="date" name="data_di_nascita_padre" required>';
         $form .= '<input class="form-control" type="text" id="data_di_nascita_padre" name="data_di_nascita_padre" placeholder="gg/mm/aaaa" pattern="\d{1,2}/\d{1,2}/\d{4}">';
         $form .= '</div>';
         $form .= '<div class="col-md-12 mb-2 ps-5 form-check">';
@@ -75,7 +72,6 @@ public function form_mappa_talenti($slug_mappa = '', $lingua = '') {
     else:
         $form = '<form id="f_mappa_talenti" action="' . $_SERVER['REQUEST_URI'] . '" method="post" onsubmit="return handleSubmit();">';
         $form .= '<p><b>*</b> Compila i campi richiesti</p>';
-
         // campi che indicano la mappa di riferimento e la lingua
         $form .= '<input type="hidden" name="slug_mappa" value="' . esc_attr($slug_mappa) . '">';
         $form .= '<input type="hidden" name="lingua" value="' . esc_attr($lingua) . '">';
